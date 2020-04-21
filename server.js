@@ -130,7 +130,7 @@ function showPetDetails(req, res) {
                 .then(apiData => {
                     const petData = apiData.body.animal;
                     const createdPet = new Pet(petData);
-                    res.render('./pages//pets/show', { pet: createdPet })
+                    res.render('./pages/pets/show', { pet: createdPet })
                 })
                 .catch((err, req, res) => console.log(err))
         }
@@ -191,7 +191,7 @@ function showAdoptedPets(req, res) {
 }
 
 
-// curl -d "grant_type=client_credentials&client_id=ETHzj63pOADq1dtarMeN88FtVGQZsVkiqAH46NYLTdNLRjrDF8&client_secret=b0i0M466DoJHGvZRCok92uRmOxNwvXkOVa9wUJIj" https://api.petfinder.com/v2/oauth2/token
+// curl -d "grant_type=client_credentials&client_id=fEhubHznuC430W5elpJg9HgdPjRJYCpkB0iC3oM7EkxYzwsWmH&client_secret=UseLVFnAqmokjamPlNk7lZJKiO2GdZkpnHM5XkWx" https://api.petfinder.com/v2/oauth2/token
 
 /////////////// Tommalieh ///////////////////////////////////////////////////  
 
